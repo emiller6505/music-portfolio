@@ -78,7 +78,7 @@ portfolio/
 - **Blog Index**: `templates/blog-index.html`
 - **Blog Post**: `templates/blog-post.html`
 - **Projects**: `templates/projects.html`
-- **Contact**: `templates/contact.html`
+- **Contact**: `templates/mailto:string.slinger@outlook.com`
 
 ### Content
 

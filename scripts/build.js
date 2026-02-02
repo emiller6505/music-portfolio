@@ -153,7 +153,6 @@ function generateStaticPages() {
     const pages = [
         { template: 'index.html', output: 'index.html' },
         { template: 'projects.html', output: 'projects.html' },
-        { template: 'contact.html', output: 'contact.html' }
     ];
     
     pages.forEach(page => {
