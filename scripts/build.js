@@ -209,7 +209,7 @@ function copyDirectory(src, dest) {
 // Compile Tailwind CSS
 function compileCSS() {
     try {
-        execSync('npx tailwindcss -i ./src/input.css -o ./dist/styles.css --minify', {
+        execSync('npx tailwindcss -i ./src/input.css -o ./docs/styles.css --minify', {
             stdio: 'inherit',
             cwd: path.join(__dirname, '..')
         });
@@ -261,3 +261,6 @@ function build() {
 
 // Run build
 build();
+
+// Explicitly exit to prevent hanging
+process.exit(0);
