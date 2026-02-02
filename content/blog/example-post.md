@@ -14,7 +14,7 @@ You can write your blog posts in markdown format. The build script will automati
 - **Markdown Support**: Write in markdown, get beautiful HTML
 - **Frontmatter**: Add metadata like title and date at the top of each post
 - **Automatic Indexing**: All posts are automatically listed on the blog index page
-- **Easy Publishing**: Just run `npm run build` and deploy the `dist/` folder
+- **Easy Publishing**: Just run `npm run build` and deploy the `docs/` folder
 
 ## Writing Posts
 

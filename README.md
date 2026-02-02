@@ -82,7 +82,7 @@ portfolio/
 
 ### Content
 
-- Add images to `public/` directory (they'll be copied to `dist/` during build)
+- Add images to `public/` directory (they'll be copied to `docs/` during build)
 - Update placeholder content in the template files
 - Customize the navigation links in each template
 
