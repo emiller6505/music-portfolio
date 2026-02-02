@@ -8,7 +8,7 @@ const { execSync } = require('child_process');
 const CONTENT_DIR = path.join(__dirname, '..', 'content', 'blog');
 const TEMPLATES_DIR = path.join(__dirname, '..', 'templates');
 const PUBLIC_DIR = path.join(__dirname, '..', 'public');
-const DIST_DIR = path.join(__dirname, '..', 'dist');
+const DIST_DIR = path.join(__dirname, '..', 'docs');
 
 // Ensure dist directory exists
 function ensureDir(dir) {
@@ -256,6 +256,7 @@ function build() {
     
     console.log('Build complete!');
     console.log(`Output directory: ${DIST_DIR}`);
+    console.log('Ready for GitHub Pages deployment from /docs folder!');
 }
 
 // Run build

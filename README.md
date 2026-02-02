@@ -18,7 +18,7 @@ portfolio/
 │   └── blog/              # Markdown blog posts
 ├── templates/              # HTML templates
 ├── public/                # Static assets (images, etc.)
-├── dist/                  # Built output (deploy this)
+├── docs/                  # Built output (deploy this - GitHub Pages compatible)
 ├── scripts/
 │   └── build.js           # Build script
 └── src/
@@ -50,10 +50,10 @@ portfolio/
    ```
 
 4. **Preview locally:**
-   - The built site is in the `dist/` directory
+   - The built site is in the `docs/` directory
    - You can use any static file server, for example:
      ```bash
-     cd dist
+     cd docs
      python -m http.server 8000
      ```
      Then visit `http://localhost:8000`
@@ -93,15 +93,13 @@ portfolio/
 1. Push your code to a GitHub repository
 2. Go to Settings → Pages
 3. Set source to "Deploy from a branch"
-4. Select the branch and set folder to `/dist`
-5. Or, if you prefer to deploy from root, you can:
-   - Build the site: `npm run build`
-   - Copy contents of `dist/` to root
-   - Commit and push
+4. Select the branch: **main** and folder: **/docs**
+5. Click Save and wait 1-2 minutes
+6. Your site will be live at `https://username.github.io/repository-name/`
 
 ### Other Static Hosts
 
-Simply upload the contents of the `dist/` directory to your hosting service:
+Simply upload the contents of the `docs/` directory to your hosting service:
 - Netlify
 - Vercel
 - AWS S3
@@ -113,8 +111,8 @@ Simply upload the contents of the `dist/` directory to your hosting service:
 2. Customize templates in `templates/` as needed
 3. Add images/assets to `public/`
 4. Run `npm run build` to generate the site
-5. Preview the `dist/` folder locally
-6. Deploy the `dist/` folder to your hosting service
+5. Preview the `docs/` folder locally
+6. Commit and push - GitHub Pages will automatically deploy from `docs/`
 
 ## Blog Post Format
 

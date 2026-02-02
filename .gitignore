@@ -18,6 +18,10 @@ yarn.lock
 .DS_Store
 Thumbs.db
 
+# Build output (kept for GitHub Pages)
+# docs/ - NOT ignored, needed for deployment
+dist/
+
 # Logs
 *.log
 npm-debug.log*
