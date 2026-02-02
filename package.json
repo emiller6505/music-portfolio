@@ -1,0 +1,27 @@
+{
+  "name": "musician-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio and blog site for a musician",
+  "main": "scripts/build.js",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "build:css": "tailwindcss -i ./src/input.css -o ./dist/styles.css --minify",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/styles.css --watch"
+  },
+  "keywords": [
+    "portfolio",
+    "blog",
+    "static-site"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "marked": "^11.1.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13"
+  }
+}

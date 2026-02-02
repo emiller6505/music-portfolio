@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan Miller - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-metal-black text-white">
+    <!-- Slim Navigation -->
+    <nav class="bg-metal-black border-b border-metal-steel sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-14">
+                <div class="flex items-center">
+                    <a href="./" class="text-xl font-bold uppercase tracking-wider text-white hover:text-metal-red transition">
+                        Portfolio
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="./" class="text-metal-silver hover:text-white transition text-sm uppercase tracking-wide">Home</a>
+                    <a href="blog/" class="text-metal-silver hover:text-white transition text-sm uppercase tracking-wide">Blog</a>
+                    <a href="projects.html" class="text-metal-silver hover:text-white transition text-sm uppercase tracking-wide">Projects</a>
+                    <a href="contact.html" class="text-metal-silver hover:text-white transition text-sm uppercase tracking-wide">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-metal-silver hover:text-white">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="./" class="block py-2 text-metal-silver hover:text-white text-sm uppercase tracking-wide">Home</a>
+                <a href="blog/" class="block py-2 text-metal-silver hover:text-white text-sm uppercase tracking-wide">Blog</a>
+                <a href="projects.html" class="block py-2 text-metal-silver hover:text-white text-sm uppercase tracking-wide">Projects</a>
+                <a href="contact.html" class="block py-2 text-metal-silver hover:text-white text-sm uppercase tracking-wide">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Gallery Section -->
+        <section class="relative hero-gallery" style="height: 85vh; min-height: 500px;">
+            <div class="hero-slide">
+                <img src="IMG_3506.jpeg" alt="Performance photo 2">
+            </div>
+            <div class="hero-slide">
+                <img src="IMG_1652.jpeg" alt="Performance photo 3">
+            </div>
+            <div class="hero-slide">
+                <img src="BC7F27BB-A8E5-4933-9505-841E08080ED8.jpeg" alt="Performance photo 4">
+            </div>
+            <div class="hero-slide">
+                <img src="0AF91584-8B7D-4408-8E5F-2DA0EB39F775.jpeg" alt="Performance photo 5">
+            </div>
+            <div class="hero-slide active">
+                <img src="341706911_221424693906719_7684523382020755544_n.jpeg" alt="Performance photo 1">
+            </div>
+            <div class="hero-slide">
+                <img src="DBE5C1C6-835E-4BB0-8133-54EE5343933F.jpeg" alt="Performance photo 6">
+            </div>
+            
+            <!-- Overlay Content -->
+            <div class="absolute inset-0 hero-overlay flex items-end pb-16">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                    <h1 class="text-6xl md:text-8xl font-bold uppercase tracking-tight mb-4">
+                        Ethan W. Miller
+                    </h1>
+                    <p class="text-xl md:text-2xl text-metal-silver uppercase tracking-widest">
+                        Guitarist • Bassist • Songwriter • Producer
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Gallery Navigation Dots -->
+            <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                <button class="gallery-dot w-2 h-2 bg-white rounded-full opacity-50 hover:opacity-100 transition" data-slide="0"></button>
+                <button class="gallery-dot w-2 h-2 bg-white rounded-full opacity-50 hover:opacity-100 transition" data-slide="1"></button>
+                <button class="gallery-dot w-2 h-2 bg-white rounded-full opacity-50 hover:opacity-100 transition" data-slide="2"></button>
+                <button class="gallery-dot w-2 h-2 bg-white rounded-full opacity-50 hover:opacity-100 transition" data-slide="3"></button>
+                <button class="gallery-dot w-2 h-2 bg-white rounded-full opacity-50 hover:opacity-100 transition" data-slide="4"></button>
+                <button class="gallery-dot w-2 h-2 bg-white rounded-full opacity-50 hover:opacity-100 transition" data-slide="5"></button>
+            </div>
+        </section>
+
+        <!-- About / Bio Section -->
+        <section class="py-20 bg-metal-charcoal">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-3 gap-12">
+                    <div class="md:col-span-2">
+                        <h2 class="editorial-heading text-sm text-metal-red mb-4">About</h2>
+                        <h3 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                            Slinger of Strings
+                        </h3>
+                        <div class="space-y-4 text-lg text-metal-silver leading-relaxed">
+                            <p>
+                                I've been playing guitar and bass since 2008 and have performed at such venerable venues as 
+                                The Palladium (Worcester, MA) Dante's (Portland, OR), and The Crocodile (Seattle, WA).
+                                Recent projects span the subgenres of deathcore, metalcore, death metal, and melodic 
+                                post-blackened metal. (And some retro synthwave...)
+                            </p>
+                            <p>
+                                This site serves as an archive of my previous works as well as a blog where I'll share some thoughts
+                                once in a blue moon. Thanks for checking it out.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="border-l-2 border-metal-red pl-6">
+                            <div class="text-5xl font-bold text-white mb-2">15+</div>
+                            <div class="text-metal-silver uppercase tracking-wide text-sm">Years Experience</div>
+                        </div>
+                        <div class="border-l-2 border-metal-red pl-6">
+                            <div class="text-5xl font-bold text-white mb-2">50+</div>
+                            <div class="text-metal-silver uppercase tracking-wide text-sm">Chugga wuggas</div>
+                        </div>
+                        <div class="border-l-2 border-metal-red pl-6">
+                            <div class="text-5xl font-bold text-white mb-2">100+</div>
+                            <div class="text-metal-silver uppercase tracking-wide text-sm">Meedly meedly mees</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Work Section -->
+        <section class="py-20 bg-metal-black">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mb-12">
+                    <h2 class="editorial-heading text-sm text-metal-red mb-4">Featured Work</h2>
+                    <h3 class="text-4xl md:text-5xl font-bold">Selected Projects</h3>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <a href="https://irevoid.bandcamp.com/album/never-not-broken" target="_blank" class="group">
+                        <div class="bg-metal-charcoal aspect-square overflow-hidden mb-4 border border-metal-steel hover-reveal">
+                            <div class="w-full h-full bg-gradient-to-br from-metal-steel to-metal-charcoal flex items-center justify-center text-6xl">
+                                <img src="../pics/irevoid.jpg" alt="">
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2 group-hover:text-metal-red transition">Ire Void - Never Not Broken</h4>
+                        <p class="text-metal-silver text-sm uppercase tracking-wide mb-2">EP • 2026</p>
+                        <p class="text-metal-silver">Slamming metalcore. I wrote Never Not Broken and Carcosa, and performed guitars on all four songs.</p>
+                    </a>
+                    
+                    <a href="https://velothian.bandcamp.com/album/mythic-dawn" target="_blank" class="group">
+                        <div class="bg-metal-charcoal aspect-square overflow-hidden mb-4 border border-metal-steel hover-reveal">
+                            <div class="w-full h-full bg-gradient-to-br from-metal-steel to-metal-charcoal flex items-center justify-center text-6xl">
+                                <img src="../pics/velothian.jpg" alt="">
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2 group-hover:text-metal-red transition">Velothian - Mythic Dawn</h4>
+                        <p class="text-metal-silver text-sm uppercase tracking-wide mb-2">Album • 2026</p>
+                        <p class="text-metal-silver">Melodic post-black metal. I performed bass on tracks 1, 2, 5, and 7.</p>
+                    </a>
+                    
+                    <a href="https://neomancer.bandcamp.com/track/night-city-blues-feat-chris-rogers" target="_blank" class="group">
+                        <div class="bg-metal-charcoal aspect-square overflow-hidden mb-4 border border-metal-steel hover-reveal">
+                            <div class="w-full h-full bg-gradient-to-br from-metal-steel to-metal-charcoal flex items-center justify-center text-6xl">
+                                <img src="../pics/neomancer.jpg" alt="">
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2 group-hover:text-metal-red transition">Neomancer - Night City Blues</h4>
+                        <p class="text-metal-silver text-sm uppercase tracking-wide mb-2">Single • 2026</p>
+                        <p class="text-metal-silver">A retro-inspired weekend project where I played synth and guitar.
+                            Chris Rogers laid down some sweet sax melodies in the middle.</p>
+                    </a>
+                </div>
+                
+                <div class="mt-12 text-center">
+                    <a href="projects.html" class="inline-block bg-metal-red hover:bg-red-700 text-white px-8 py-3 uppercase tracking-wider text-sm font-bold transition">
+                        View All Projects
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Divider -->
+        <div class="section-divider"></div>
+
+        <!-- Latest Blog Posts -->
+        <section class="py-20 bg-metal-charcoal">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mb-12">
+                    <h2 class="editorial-heading text-sm text-metal-red mb-4">Latest Updates</h2>
+                    <h3 class="text-4xl md:text-5xl font-bold">From the Blog</h3>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <a href="blog/" class="group bg-metal-black border border-metal-steel hover-reveal p-6">
+                        <p class="text-metal-silver text-xs uppercase tracking-widest mb-4">Blog Post</p>
+                        <h4 class="text-2xl font-bold mb-3 group-hover:text-metal-red transition leading-tight">
+                            Blog Post Title Here
+                        </h4>
+                        <p class="text-metal-silver mb-4">
+                            A preview of the blog post content goes here, giving readers a taste of what to expect...
+                        </p>
+                        <span class="text-metal-red text-sm uppercase tracking-wide font-bold">Read More →</span>
+                    </a>
+                    
+                    <a href="blog/" class="group bg-metal-black border border-metal-steel hover-reveal p-6">
+                        <p class="text-metal-silver text-xs uppercase tracking-widest mb-4">Blog Post</p>
+                        <h4 class="text-2xl font-bold mb-3 group-hover:text-metal-red transition leading-tight">
+                            Blog Post Title Here
+                        </h4>
+                        <p class="text-metal-silver mb-4">
+                            A preview of the blog post content goes here, giving readers a taste of what to expect...
+                        </p>
+                        <span class="text-metal-red text-sm uppercase tracking-wide font-bold">Read More →</span>
+                    </a>
+                    
+                    <a href="blog/" class="group bg-metal-black border border-metal-steel hover-reveal p-6">
+                        <p class="text-metal-silver text-xs uppercase tracking-widest mb-4">Blog Post</p>
+                        <h4 class="text-2xl font-bold mb-3 group-hover:text-metal-red transition leading-tight">
+                            Blog Post Title Here
+                        </h4>
+                        <p class="text-metal-silver mb-4">
+                            A preview of the blog post content goes here, giving readers a taste of what to expect...
+                        </p>
+                        <span class="text-metal-red text-sm uppercase tracking-wide font-bold">Read More →</span>
+                    </a>
+                </div>
+                
+                <div class="mt-12 text-center">
+                    <a href="blog/" class="inline-block border-2 border-white hover:bg-white hover:text-metal-black text-white px-8 py-3 uppercase tracking-wider text-sm font-bold transition">
+                        View All Posts
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-metal-black border-t border-metal-steel py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h4 class="editorial-heading text-sm text-metal-red mb-4">Navigation</h4>
+                    <div class="space-y-2">
+                        <a href="./" class="block text-metal-silver hover:text-white transition">Home</a>
+                        <a href="blog/" class="block text-metal-silver hover:text-white transition">Blog</a>
+                        <a href="projects.html" class="block text-metal-silver hover:text-white transition">Projects</a>
+                        <a href="contact.html" class="block text-metal-silver hover:text-white transition">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="editorial-heading text-sm text-metal-red mb-4">Connect</h4>
+                    <div class="space-y-2">
+                        <a href="#" class="block text-metal-silver hover:text-white transition">Instagram</a>
+                        <a href="#" class="block text-metal-silver hover:text-white transition">YouTube</a>
+                        <a href="#" class="block text-metal-silver hover:text-white transition">Bandcamp</a>
+                        <a href="#" class="block text-metal-silver hover:text-white transition">Spotify</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="editorial-heading text-sm text-metal-red mb-4">Contact</h4>
+                    <p class="text-metal-silver">
+                        Available for sessions, collaborations, and live performances.
+                    </p>
+                    <a href="contact.html" class="inline-block mt-4 text-metal-red hover:text-white transition uppercase tracking-wide text-sm font-bold">
+                        Get In Touch →
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-metal-steel pt-8 text-center">
+                <p class="text-metal-silver text-sm">&copy; 2024 Musician Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Hero Gallery Slideshow
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.hero-slide');
+        const dots = document.querySelectorAll('.gallery-dot');
+        
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('opacity-100'));
+            dots.forEach(dot => dot.classList.add('opacity-50'));
+            
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.remove('opacity-50');
+            dots[currentSlide].classList.add('opacity-100');
+        }
+        
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+        
+        // Auto-advance every 4 seconds
+        setInterval(nextSlide, 4000);
+        
+        // Manual navigation
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => showSlide(index));
+        });
+        
+        // Initialize first dot
+        showSlide(0);
+    </script>
+</body>
+</html>
