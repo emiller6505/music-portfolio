@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Blog - Musician Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="bg-metal-black text-white">
+    <!-- Slim Navigation -->
+    <nav class="bg-metal-black border-b border-metal-steel sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-14">
+                <div class="flex items-center">
+                    <a href="../" class="text-xl font-bold uppercase tracking-wider text-white hover:text-metal-red transition">
+                        Portfolio
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="../" class="text-metal-silver hover:text-white transition text-sm uppercase tracking-wide">Home</a>
+                    <a href="./" class="text-metal-silver hover:text-white transition text-sm uppercase tracking-wide">Blog</a>
+                    <a href="../projects.html" class="text-metal-silver hover:text-white transition text-sm uppercase tracking-wide">Projects</a>
+                    <a href="../contact.html" class="text-metal-silver hover:text-white transition text-sm uppercase tracking-wide">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-metal-silver hover:text-white">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="../" class="block py-2 text-metal-silver hover:text-white text-sm uppercase tracking-wide">Home</a>
+                <a href="./" class="block py-2 text-metal-silver hover:text-white text-sm uppercase tracking-wide">Blog</a>
+                <a href="../projects.html" class="block py-2 text-metal-silver hover:text-white text-sm uppercase tracking-wide">Projects</a>
+                <a href="../contact.html" class="block py-2 text-metal-silver hover:text-white text-sm uppercase tracking-wide">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Article -->
+        <article class="py-20 bg-metal-black">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Back Link -->
+                <a href="index.html" class="inline-block text-metal-silver hover:text-metal-red transition uppercase tracking-wide text-sm font-bold mb-8">
+                    ← Back to Blog
+                </a>
+                
+                <!-- Article Header -->
+                <header class="mb-12 pb-8 border-b border-metal-steel">
+                    <h1 class="editorial-heading text-sm text-metal-red mb-4">Blog Post</h1>
+                    <h2 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Welcome to My Blog</h2>
+                    <time class="text-metal-silver uppercase tracking-wide text-sm" datetime="2024-01-15">{{dateFormatted}}</time>
+                </header>
+
+                <!-- Article Content -->
+                <div class="prose prose-invert prose-lg max-w-none">
+                    <style>
+                        .prose {
+                            color: #9ca3af;
+                        }
+                        .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+                            color: #ffffff;
+                            font-weight: bold;
+                            margin-top: 2em;
+                            margin-bottom: 1em;
+                        }
+                        .prose h2 {
+                            font-size: 2em;
+                            border-bottom: 1px solid #4a4a4a;
+                            padding-bottom: 0.5em;
+                        }
+                        .prose h3 {
+                            font-size: 1.5em;
+                        }
+                        .prose p {
+                            margin-bottom: 1.5em;
+                            line-height: 1.8;
+                        }
+                        .prose a {
+                            color: #dc2626;
+                            text-decoration: none;
+                            transition: color 0.2s;
+                        }
+                        .prose a:hover {
+                            color: #ffffff;
+                        }
+                        .prose strong {
+                            color: #ffffff;
+                            font-weight: bold;
+                        }
+                        .prose em {
+                            color: #ffffff;
+                            font-style: italic;
+                        }
+                        .prose ul, .prose ol {
+                            margin: 1.5em 0;
+                            padding-left: 2em;
+                        }
+                        .prose li {
+                            margin-bottom: 0.5em;
+                        }
+                        .prose code {
+                            background-color: #1a1a1a;
+                            color: #dc2626;
+                            padding: 0.2em 0.4em;
+                            border-radius: 3px;
+                            font-size: 0.9em;
+                        }
+                        .prose pre {
+                            background-color: #1a1a1a;
+                            border: 1px solid #4a4a4a;
+                            padding: 1.5em;
+                            overflow-x: auto;
+                            margin: 2em 0;
+                        }
+                        .prose pre code {
+                            background-color: transparent;
+                            padding: 0;
+                        }
+                        .prose blockquote {
+                            border-left: 4px solid #dc2626;
+                            padding-left: 1.5em;
+                            margin: 2em 0;
+                            font-style: italic;
+                            color: #ffffff;
+                        }
+                    </style>
+                    <p>Welcome to my blog! This is an example blog post to show you how the markdown-to-HTML conversion works.</p>
+<h2>Getting Started</h2>
+<p>You can write your blog posts in markdown format. The build script will automatically convert them to HTML and generate individual pages for each post.</p>
+<h2>Features</h2>
+<ul>
+<li><strong>Markdown Support</strong>: Write in markdown, get beautiful HTML</li>
+<li><strong>Frontmatter</strong>: Add metadata like title and date at the top of each post</li>
+<li><strong>Automatic Indexing</strong>: All posts are automatically listed on the blog index page</li>
+<li><strong>Easy Publishing</strong>: Just run <code>npm run build</code> and deploy the <code>dist/</code> folder</li>
+</ul>
+<h2>Writing Posts</h2>
+<p>To create a new blog post:</p>
+<ol>
+<li>Create a new <code>.md</code> file in the <code>content/blog/</code> directory</li>
+<li>Add frontmatter at the top with <code>title</code> and <code>date</code></li>
+<li>Write your content in markdown</li>
+<li>Run <code>npm run build</code> to generate the site</li>
+</ol>
+<p>That&#39;s it! Your post will be automatically included in the blog index and available as its own page.</p>
+<h2>Markdown Examples</h2>
+<p>You can use all standard markdown features:</p>
+<ul>
+<li><strong>Bold text</strong></li>
+<li><em>Italic text</em></li>
+<li><a href="https://example.com">Links</a></li>
+<li>Lists (ordered and unordered)</li>
+<li>Code blocks</li>
+<li>And more!</li>
+</ul>
+<p>Happy writing!</p>
+
+                </div>
+            </div>
+        </article>
+
+        <!-- Related / Navigation -->
+        <section class="py-12 bg-metal-charcoal border-t border-metal-steel">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <a href="index.html" class="inline-block bg-metal-red hover:bg-red-700 text-white px-8 py-3 uppercase tracking-wider text-sm font-bold transition">
+                    View All Posts
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-metal-black border-t border-metal-steel py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h4 class="editorial-heading text-sm text-metal-red mb-4">Navigation</h4>
+                    <div class="space-y-2">
+                        <a href="../" class="block text-metal-silver hover:text-white transition">Home</a>
+                        <a href="./" class="block text-metal-silver hover:text-white transition">Blog</a>
+                        <a href="../projects.html" class="block text-metal-silver hover:text-white transition">Projects</a>
+                        <a href="../contact.html" class="block text-metal-silver hover:text-white transition">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="editorial-heading text-sm text-metal-red mb-4">Connect</h4>
+                    <div class="space-y-2">
+                        <a href="#" class="block text-metal-silver hover:text-white transition">Instagram</a>
+                        <a href="#" class="block text-metal-silver hover:text-white transition">YouTube</a>
+                        <a href="#" class="block text-metal-silver hover:text-white transition">Bandcamp</a>
+                        <a href="#" class="block text-metal-silver hover:text-white transition">Spotify</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="editorial-heading text-sm text-metal-red mb-4">Contact</h4>
+                    <p class="text-metal-silver">
+                        Available for sessions, collaborations, and live performances.
+                    </p>
+                    <a href="../contact.html" class="inline-block mt-4 text-metal-red hover:text-white transition uppercase tracking-wide text-sm font-bold">
+                        Get In Touch →
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-metal-steel pt-8 text-center">
+                <p class="text-metal-silver text-sm">&copy; 2024 Musician Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>

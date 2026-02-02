@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Musician Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="bg-metal-black text-white">
+    <!-- Slim Navigation -->
+    <nav class="bg-metal-black border-b border-metal-steel sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-14">
+                <div class="flex items-center">
+                    <a href="../" class="text-xl font-bold uppercase tracking-wider text-white hover:text-metal-red transition">
+                        Portfolio
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="../" class="text-metal-silver hover:text-white transition text-sm uppercase tracking-wide">Home</a>
+                    <a href="./" class="text-metal-silver hover:text-white transition text-sm uppercase tracking-wide">Blog</a>
+                    <a href="../projects.html" class="text-metal-silver hover:text-white transition text-sm uppercase tracking-wide">Projects</a>
+                    <a href="../contact.html" class="text-metal-silver hover:text-white transition text-sm uppercase tracking-wide">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-metal-silver hover:text-white">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="../" class="block py-2 text-metal-silver hover:text-white text-sm uppercase tracking-wide">Home</a>
+                <a href="./" class="block py-2 text-metal-silver hover:text-white text-sm uppercase tracking-wide">Blog</a>
+                <a href="../projects.html" class="block py-2 text-metal-silver hover:text-white text-sm uppercase tracking-wide">Projects</a>
+                <a href="../contact.html" class="block py-2 text-metal-silver hover:text-white text-sm uppercase tracking-wide">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Page Header -->
+        <section class="py-20 bg-metal-charcoal border-b border-metal-steel">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h1 class="editorial-heading text-sm text-metal-red mb-4">Archive</h1>
+                <h2 class="text-5xl md:text-7xl font-bold mb-6">Blog</h2>
+                <p class="text-xl text-metal-silver">
+                    Thoughts on gear, technique, the music industry, and the creative process.
+                </p>
+            </div>
+        </section>
+
+        <!-- Blog Posts -->
+        <section class="py-20 bg-metal-black">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+
+                <div class="space-y-12">
+                    
+                <article class="border-l-2 border-metal-red pl-8 pb-12 hover:border-white transition">
+                    <time class="text-metal-silver text-xs uppercase tracking-widest mb-3 block" datetime="2024-01-15">January 14, 2024</time>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 leading-tight">
+                        <a href="example-post.html" class="text-white hover:text-metal-red transition">
+                            Welcome to My Blog
+                        </a>
+                    </h2>
+                    <p class="text-metal-silver text-lg mb-6 leading-relaxed">Welcome to my blog! This is an example blog post to show you how the markdown-to-HTML conversion works.  ## Getting Started  You can write your blog...</p>
+                    <a href="example-post.html" class="text-metal-red hover:text-white transition uppercase tracking-wide text-sm font-bold">
+                        Read Full Post →
+                    </a>
+                </article>
+            
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-metal-black border-t border-metal-steel py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h4 class="editorial-heading text-sm text-metal-red mb-4">Navigation</h4>
+                    <div class="space-y-2">
+                        <a href="../" class="block text-metal-silver hover:text-white transition">Home</a>
+                        <a href="./" class="block text-metal-silver hover:text-white transition">Blog</a>
+                        <a href="../projects.html" class="block text-metal-silver hover:text-white transition">Projects</a>
+                        <a href="../contact.html" class="block text-metal-silver hover:text-white transition">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="editorial-heading text-sm text-metal-red mb-4">Connect</h4>
+                    <div class="space-y-2">
+                        <a href="#" class="block text-metal-silver hover:text-white transition">Instagram</a>
+                        <a href="#" class="block text-metal-silver hover:text-white transition">YouTube</a>
+                        <a href="#" class="block text-metal-silver hover:text-white transition">Bandcamp</a>
+                        <a href="#" class="block text-metal-silver hover:text-white transition">Spotify</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="editorial-heading text-sm text-metal-red mb-4">Contact</h4>
+                    <p class="text-metal-silver">
+                        Available for sessions, collaborations, and live performances.
+                    </p>
+                    <a href="../contact.html" class="inline-block mt-4 text-metal-red hover:text-white transition uppercase tracking-wide text-sm font-bold">
+                        Get In Touch →
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-metal-steel pt-8 text-center">
+                <p class="text-metal-silver text-sm">&copy; 2024 Musician Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>
